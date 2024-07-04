@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdureira</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ImQKqioABwYPmuK/IKBnIhLdpfx+7KcDMy9us1c6szF21fhk2eFgRmzv1rN1VQg1uRgrz9izKDnZvC8scK4WuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Verdureira da Vila</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Checkbox para controle do carrinho -->
+        <input type="checkbox" id="abrir-carrinho">
+        <label for="abrir-carrinho" id="carrinho-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </label>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Bem-vindo à Verdureira da Vila!</h2>
+            <p>Oferecemos os melhores produtos frescos e orgânicos.</p>
+        </section>
+        
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produto" onclick="adicionarItem('Cenouras', 4.00)">
+                <i class="fas fa-carrot"></i>
+                <h3>Cenouras</h3>
+                <p>Doces e nutritivas.</p>
+                <p>Preço: R$4,00/kg</p>
+            </div>
+            <div class="produto" onclick="adicionarItem('Alfaces', 3.00)">
+                <i class="fas fa-leaf"></i>
+                <h3>Alfaces</h3>
+                <p>Crocantes e saudáveis.</p>
+                <p>Preço: R$3,00/unidade</p>
+            </div>
+            <div class="produto" onclick="adicionarItem('Pimentão', 5.50)">
+                <i class="fas fa-pepper-hot"></i>
+                <h3>Pimentão</h3>
+                <p>Coloridos e saborosos.</p>
+                <p>Preço: R$5,50/kg</p>
+            </div>
+            <div class="produto" onclick="adicionarItem('Brócolis', 6.00)">
+                <i class="fas fa-broccoli"></i>
+                <h3>Brócolis</h3>
+                <p>Ricos em nutrientes.</p>
+                <p>Preço: R$6,00/kg</p>
+            </div>
+            <div class="produto" onclick="adicionarItem('Espinafre', 4.50)">
+                <i class="fas fa-spinach"></i>
+                <h3>Espinafre</h3>
+                <p>Fortes e saudáveis.</p>
+                <p>Preço: R$4,50/kg</p>
+            </div>
+            <div class="produto" onclick="adicionarItem('Tomates', 5.00)">
+                <i class="fas fa-seedling"></i>
+                <h3>Tomates</h3>
+                <p>Frescos e suculentos.</p>
+                <p>Preço: R$5,00/kg</p>
+            </div>
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma verdureira dedicada a fornecer os melhores produtos naturais.</p>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@verdureiradavila.com</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Verdureira da Vila. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Carrinho de Compras -->
+    <div id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho">
+            <!-- Itens do carrinho serão adicionados aqui -->
+        </ul>
+        <p id="total">Total: R$ 0,00</p>
+        <button id="limpar-carrinho">Limpar Carrinho</button>
+    </div>
+    <link rel="stylesheet" type="text/css" href="index css 1.css" media="screen" />
+</body>
+</html>
